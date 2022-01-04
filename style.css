@@ -1,0 +1,288 @@
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: #000;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+  background-color: #30303030;
+  backdrop-filter: blur(8px);
+}
+.nav-logo {
+  padding: 20px;
+  width: 160px;
+}
+
+.background-animation {
+  position: fixed;
+  height: auto;
+  top: 0;
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.spacer-big {
+  height: 2000px;
+}
+.spacer-medium {
+  height: 750px;
+}
+.spacer-small {
+  height: 500px;
+}
+
+#hero-header {
+  color: white;
+  position: fixed;
+  font-size: 90px;
+  letter-spacing: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+  opacity: 0;
+  font-family: "Archivo Black";
+}
+
+#rb11image {
+  position: fixed;
+  right: 0%;
+  top: 0%;
+  opacity: 0;
+  width: 800px;
+}
+
+.label {
+  position: fixed;
+  color: white;
+  font-size: 70px;
+  opacity: 0;
+  text-align: center;
+}
+.label-hero {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.label-title {
+  right: 5%;
+  font-size: 80px;
+  top: 50%;
+  color: #ffce31;
+}
+.label-right {
+  right: 5%;
+  width: 20%;
+  text-align: center;
+  top: 50%;
+  line-height: 45px;
+  font-size: 35px;
+}
+
+.description {
+  position: fixed;
+  top: 50%;
+  left: 15%;
+  color: white;
+  font-size: 35px;
+  width: 600px;
+  opacity: 0;
+  text-align: left;
+}
+
+#animation2-image {
+  opacity: 0;
+}
+
+#animation3-image {
+  display: none;
+}
+
+.stroke {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  color: transparent !important;
+}
+
+.label-right {
+  right: 5%;
+  width: 500px;
+  text-align: right;
+  top: 50%;
+  position: fixed;
+  color: white;
+  opacity: 0;
+  line-height: 45px;
+  font-size: 35px;
+}
+
+.widther {
+  width: 800px;
+}
+
+.bigger {
+  font-size: 50px;
+}
+
+.modes-header {
+  font-size: 90px;
+}
+
+.mode {
+  opacity: 0;
+  position: fixed;
+  top: 30%;
+  text-align: center;
+}
+.mode-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.mode-image {
+  width: 50%;
+}
+.mode-name {
+  color: white;
+  font-size: 80px;
+  width: 100%;
+  text-align: center;
+}
+.mode-description {
+  width: 50%;
+  color: white;
+  font-size: 30px;
+  padding: 100px;
+}
+
+.times {
+  position: fixed;
+  top: 20%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.times-container {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.times-header {
+  color: transparent;
+  font-size: 70px;
+  text-align: center;
+}
+
+.time {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 500px;
+  padding: 50px;
+}
+.time-product {
+  font-size: 40px;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+.time-time {
+  padding: 50px;
+  font-size: 30px;
+  color: #c2c2c2;
+  text-align: center;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+.time-svg {
+  height: 200px;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+
+.contact {
+  position: fixed;
+  top: 10%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  opacity: 0;
+}
+.contact-header {
+  position: fixed;
+  color: white;
+  font-size: 70px;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 500px;
+}
+.contact-element {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+}
+.contact-icon {
+  height: 40px;
+  margin-right: 15px;
+}
+.contact-text {
+  font-size: 40px;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
